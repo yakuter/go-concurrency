@@ -1,3 +1,4 @@
+// https://golangbyexample.com/select-statement-golang/
 package main
 
 import (
@@ -34,5 +35,7 @@ func goOne(ch chan string) {
 }
 
 func goTwo(ch chan string) {
+	// You can try with sleep to be sure
+	// time.Sleep(time.Second * 1)
 	ch <- "From goTwo goroutine"
 }
